@@ -31,8 +31,9 @@ class CashRegister
       return "There is no discount to apply."
     end
   end
-  def full_price
+  def full_price(quantity)
     full_price = @price*quantity
+  end 
     
 
   def void_last_transaction
